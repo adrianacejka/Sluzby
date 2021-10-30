@@ -13,7 +13,7 @@ margin: 0;
 }
 
 .main {
-    padding: 60px 20px;
+    margin: 60px 20px;
 }
 
 .banner {
@@ -94,7 +94,7 @@ li {
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-top: 15px;
-    /* border: 1px solid red; */
+    align-items: center;
     padding: 20px;
     box-shadow: 0px 4px 6px #407BFF1F;
 }
@@ -102,14 +102,16 @@ li {
 .text-box {
     font-size: 13px;
     font-weight: 300;
-    margin-left: 30px;
+    margin-left: 30px;  
 }
 
 @media screen and (min-width: 640px) {
 
+
     .banner {
         max-width: 400px;
-        height: 332px;   
+        height: 332px;
+        margin-bottom: 30px; 
     }
 
     .buttons {
@@ -145,7 +147,7 @@ li {
     }
 
     .box {
-        max-width: calc((100% - 40px) / 3);
+        width: calc((100% - 40px) / 3);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -154,20 +156,106 @@ li {
         padding: 40px 15px;
     }
 
-    .text-box {
-        margin: 0;
-        text-align: center;
-    }
-
     .icon {
         margin-bottom: 20px;
     }
+
+    .text-box {
+        margin: 0;
+        text-align: center;
+        height: 50%;
+    }
+
+  
  
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 1100px) {
 
+    .main {
+        width: 1040px;
+        margin: 60px auto;
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner {
+        max-width: 425px;
+        height: 354px;
+        margin: 0 auto;
+    }
+
+    .container-banner {
+        flex-basis: calc((100% - 60px) / 2);
+        flex-shrink: 1;
+        order: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-side-intro {
+        display: flex;
+        width: calc((100% - 60px) / 2);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .line {
+        margin-left: 0;
+    }
+
+    .left-side-intro .text {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    /* .section-text {
+        display: flex;
+    } */
+
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left-side-travel-services {
+        order: -1;
+    }
+
+    .box-container {
+        flex-basis: 550px;
+        flex-shrink: 0;
+    }
+
+    .section-text {
+        flex-basis: calc(100% - 550px - 60px);
+    }
+        
+
+    .section-text .text,
+    h2 {
+        margin: 0;
+        text-align: left;
+    }
+
+    h2 {
+        margin-bottom: 17px;
+    }
+
+    .intro,
+    .section {
+        margin-bottom: 80px;
+    }
     
+
+
+
 }
 
 
