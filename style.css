@@ -4,13 +4,13 @@ html { box-sizing: border-box; }
 
 
 body {
-background-color: #FAFAFA;
-font-family: 'Montserrat', sans-serif;
-line-height: 1.4;
-color: #8B8B8B;
-font-weight: 300;
-margin: 0;
-}
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+    color: #8B8B8B;
+    font-weight: 300;
+    margin: 0;
+    }
 
 .main {
     margin: 60px 20px;
@@ -35,7 +35,6 @@ h1, h2, .text {
 
 h1 {
     font-size: 28px;
-    /* font-weight: 500; */
     color: #000000;
     margin: 0;
 }
@@ -166,8 +165,6 @@ li {
         height: 50%;
     }
 
-  
- 
 }
 
 @media screen and (min-width: 1100px) {
@@ -214,10 +211,6 @@ li {
         text-align: left;
     }
 
-    /* .section-text {
-        display: flex;
-    } */
-
     .section {
         display: flex;
         align-items: center;
@@ -237,7 +230,6 @@ li {
         flex-basis: calc(100% - 550px - 60px);
     }
         
-
     .section-text .text,
     h2 {
         margin: 0;
@@ -252,9 +244,6 @@ li {
     .section {
         margin-bottom: 80px;
     }
-    
-
-
 
 }
 
